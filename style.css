@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(107,113,230,1) 31%, rgba(78,29,193,0.9698004201680672) 55%, rgba(106,111,229,1) 77%, rgba(108,117,232,1) 87%, rgba(107,112,230,1) 87%, rgba(107,113,230,1) 97%);
+}
+.myBar{
+    width: 420px;
+    height: 530px;
+    padding: 20px 50px;
+    background-color: #fff;
+    margin-top: 40px;
+    border-radius: 15px;
+}
+.buttonHey{
+    display: flex;
+    justify-content: center;
+}
+#btn{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 3px 60px;
+    border: none;
+    border-radius: 15px;
+    color: aliceblue;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(226,5,229,1) 0%, rgba(20,34,223,1) 83%);}
+#icon{
+    border: 1px solid blue;
+    padding: 5px 6px;
+    border-radius: 50%;
+    color: blue;
+}
+.inputName input{
+    outline: none;
+    border: none;
+}
+#signUpHey{
+    padding: 0 30px;
+}
+.signUpHey label{
+    margin-bottom: 4px;
+}
+.inputName{
+    display: flex;
+    justify-content: space-around;
+    width: 260px;
+    height: 40px;
+    margin-bottom: 6px;
+    background-color: white;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.terms{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.terms p {
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-left: 4px;
+}
+.terms span{
+    color: rgb(22, 22, 207);
+    font-weight: 600;
+}
+.alreadyAccount{
+    text-align: center;
+}
+.alreadyAccount p {
+    margin-top: 10px;
+    font-size: 13px;
+}
+#logIn{
+    color: blue;
+    font-weight: 700;
+}
+.myBar h2{
+    text-align: center;
+}
+.myPopUp{
+    width: 300px;
+    border: 1px solid red;
+}
+#logIn:hover{
+    color: red;
+    cursor: pointer;
+}
+#termsACon:hover{
+    color: red;
+    cursor: pointer;
+}
+#btn:hover{
+    background: blue;
+}
