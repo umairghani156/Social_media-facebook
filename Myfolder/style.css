@@ -1,0 +1,315 @@
+#navbarfirst{
+    background-color:#fff;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.inputForm{
+    border: 1px solid rgb(228, 221, 221);
+    padding: 2px  5px;
+    border-radius: 15px;
+}
+.inputForm i {
+    font-size: 18px;
+    color: rgb(162, 159, 159);
+}
+.inputForm input{
+    box-shadow: none !important;
+}
+#fbLogo{
+    font-size: 35px;
+    margin: 0 15px;
+    color: blue;
+}
+.firstLogo i{
+    color: blue !important;
+}
+.nav:last-child li img{
+    width: 20px;
+}
+.navbarBars{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgb(234, 225, 225);
+    margin-right: 15px;
+}
+.navbarBars a i{
+    
+
+    font-size: 20px;
+}
+#profileImg{
+    
+    width: 35px;
+    border-radius: 50%;
+}
+#navbarMiddleIcons a i{
+    font-size: 25px;
+    padding: 2px 20px;
+    color: rgb(172, 164, 164);
+}
+#selectedbar{
+    background-color: transparent !important;
+   position: absolute;
+   width: 40px;
+   box-shadow: none !important;
+   border: none !important;
+   right: 5px;
+   top: 30px;
+}
+#userProfileImage{
+    top: 280px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+#userProfileImage img{
+    border-radius: 50%;
+}
+.cameraIcon{
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(179, 175, 175);
+}
+ 
+/* Edit Details */
+#userInformation i{
+   width: 20px;
+   margin-right: 15px;
+   font-size: 20px;
+   color: rgb(180, 176, 176);
+}
+#userExper{
+    font-size: 16px ;
+}
+#userId img{
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.comments span{
+    margin-left: 10px;
+}
+#userDetailsLine{
+    margin-top: 40px;
+    margin-left: 250px;
+}
+#userInformationAndDetails .card{
+    width: 20rem;
+}
+#editBtn{
+    background-color: rgb(227, 220, 220) !important;
+}
+#editBtn:hover{
+    background-color: rgb(171, 167, 167) !important;
+}
+#detailsNavbar{
+    border-top: 1px solid rgb(212, 207, 207) !important;
+    border-bottom: 1px solid rgb(212, 207, 207) !important;
+}
+#cancelBtn{
+    background-color: rgb(218, 212, 212);
+    border: none;
+    color: black;
+}
+#saveBtn{
+    border: none;
+    padding: 6px 40px;
+}
+#editInformaBtn{
+    background-color: #fff;
+    color: rgb(12, 105, 235);
+    border: none;
+    font-weight: 500;
+}
+#closeBtn{
+    border-radius: 50%;
+    background-color: rgb(235, 226, 226);
+    box-shadow: none;
+}
+#profession{
+    box-shadow: none;
+}
+#education{
+    box-shadow: none;
+}
+#residence{
+    box-shadow: none;
+}
+#locationAdre{
+    box-shadow: none;
+}
+#userExper1{
+    font-weight: 500;
+    margin-left: 4px;
+}
+#userExper2{
+    font-weight: 500;
+    margin-left: 4px;
+}
+#userExper3{
+    font-weight: 500;
+    margin-left: 4px;
+}
+#userExper4{
+    font-weight: 500;
+    margin-left: 4px;
+}
+#email{
+    font-weight: 500;
+}
+#pNumber{
+    font-weight: 500;
+}
+#hobbies{
+    font-weight: 500;
+}
+#desc{
+    font-weight: 500;
+}
+#profileImgDone{
+    width: 200px;
+    height: 200px;
+}
+.hidden{
+    display: none;
+}
+#displayUserProfile ul{
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    transition: all 3sc;
+    
+}
+#displayUserProfile ul li{
+    list-style-type: none;
+    background-color: rgb(241, 244, 244);
+    padding: 2px 6px;
+    cursor: pointer;
+    border: 1px solid rgb(222, 219, 219);
+}
+#homebtn:hover{
+     text-decoration: underline;
+     color: red;
+}
+#logOutOne:hover{
+     text-decoration: underline;
+     color: red;
+}
+#profileLogOuT{
+    display: none;
+}
+#profileImg{
+    cursor: pointer;
+}
+
+@media (max-width: 960px) {
+    #navbarIcons{
+        display: none;
+    }
+    #navbarMiddleIcons{
+        display: none;
+    }
+    #userProfileImage{
+        margin-left: 220px;
+    }
+    .backCover{
+        display: block;
+    }
+    #userDetailsLine h3{
+        padding-left: 80px;
+        padding-top: 20px;
+    }
+    #userDetailsLine{
+        margin-top: 120px;
+        margin-bottom: 100px;
+        margin-left: 200px;
+    }
+    #userDetailsLine2{
+       position: absolute;
+       top: 600px;
+    }
+    #userInformationAndDetails .card{
+        width: 100%;
+    }
+    
+    #cardWala2{
+        display: flex;
+    }
+  }
+  @media (max-width: 760px) {
+    #userProfileImage{
+        margin-left: 130px;
+    }
+    #userDetailsLine h3{
+        padding-left: 90px;
+        padding-top: 20px;
+    }
+    #userDetailsLine{
+        margin-top: 120px;
+        margin-bottom: 100px;
+        margin-left: 100px;
+    }
+  }
+  @media (max-width: 460px){
+    #userProfileImage{
+        margin-left: 100px;
+    }
+    #userDetailsLine h3{
+        padding-left: 110px;
+        padding-top: 20px;
+    }
+    #userDetailsLine{
+        margin-top: 120px;
+        margin-bottom: 100px;
+        margin-left: 60px;
+    }
+  }
+  @media (max-width: 425px){
+    #userProfileImage{
+        margin-left: 80px;
+    }
+    #userDetailsLine h3{
+        padding-left: 90px;
+        padding-top: 20px;
+    }
+    #userDetailsLine{
+        margin-top: 120px;
+        margin-bottom: 100px;
+        margin-left: 65px;
+    }
+    #userToggle{
+        display: none;
+    }
+  }
+
+@media (max-width: 390px){
+    #userProfileImage{
+        margin-left: 60px;
+    }
+    #userDetailsLine h3{
+        padding-left: 60px;
+        padding-top: 20px;
+    }
+    #userDetailsLine{
+        margin-top: 120px;
+        margin-bottom: 100px;
+        margin-left: 50px;
+    }
+    .inputForm{
+        display: none !important;
+    }
+}

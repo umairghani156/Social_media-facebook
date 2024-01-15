@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar ">
+            <div class="logo">
+                <i class="fa-brands fa-facebook"></i>
+                <div id="inputForm">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="form-control me-2" type="search" placeholder="Search Facebook" aria-label="Search"
+                        id="searchBar">
+                </div>
+            </div>
+            <ul class="nav">
+                <li class="nav-item firstLogo" id="navbarMiddleIcons">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house-crack"></i></a>
+                </li>
+                <li class="nav-item" id="navbarMiddleIcons">
+                    <a class="nav-link disabled" href="#"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li class="nav-item" id="navbarMiddleIcons">
+                    <a class="nav-link disabled" href="#" aria-disabled="true"><i class="fa-solid fa-store"></i></a>
+                </li>
+                <li class="nav-item" id="navbarMiddleIcons">
+                    <a class="nav-link disabled" href="#" aria-disabled="true"><i class="fa-solid fa-users"></i></a>
+                </li>
+
+                <li class="nav-item menuBar" id="navbarMiddleIcons">
+                    <a class="nav-link disabled" aria-disabled="true"><i class="fa-solid fa-gamepad"></i></a>
+                </li>
+                <!-- below are menu bars -->
+                <!-- <li class="nav-item profileBars" >
+                    <a class="nav-link" href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
+                </li>
+                <li class="nav-item profileBars" >
+                    <a class="nav-link" href="#"><i class="fa-solid fa-bell"></i></a>
+                </li>
+                <li class="nav-item profileBars" id="displayUserProfile" onclick="myHandle1()">
+                        <img src="./Assets/profile.jpg" alt="" id="profileImg" width="30px" style="border-radius: 50%;">
+                    
+                </li> -->
+            </ul>
+            <ul class="nav">
+                <li class="nav-item navbarBars " id="menuHidden">
+                    <a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-bars"></i></a>
+                </li>
+                <li class="nav-item navbarBars hiddenIcon">
+                    <a class="nav-link" href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
+                </li>
+                <li class="nav-item navbarBars hiddenIcon">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-bell"></i></a>
+                </li>
+                <li class="nav-item navbarBars" id="displayUserProfile" onclick="myHandle1()">
+                    <div class="profileClickBtn">
+                        <img src="./Assets/profile.jpg" alt="" id="profileImg">
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid mainContainer" style="background-color: rgb(240, 238, 238);">
+            <div class="row justify-content-start" id="mainSite">
+                <div class="col-3" id="sectionA">
+                    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" id="check"
+                        data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
+                        class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+                        <div class="iconsWithDetail d-flex justify-content-between ">
+                            <div class="d-flex ">
+                                <img src="" alt="" id="scrollBarProfileImg"
+                                    style="border-radius: 50%; width: 30px; height: 30px; margin-right: 5px">
+                                <h5 id="userNameInBar">User name</h5>
+                            </div>
+                            <i class="fa-solid fa-xmark " id="crossIconHidden"></i>
+                        </div>
+                        <div class="iconsWithDetail">
+                            <i class="fa-solid fa-user-group" style="color: rgb(50, 50, 225);"></i>
+                            <p>Friends</p>
+                        </div>
+                        <div class="iconsWithDetail">
+                            <i class="fa-solid fa-bookmark" style="color: blueviolet;"></i>
+                            <p>Saved</p>
+                        </div>
+                        <div class="iconsWithDetail">
+                            <i class="fa-solid fa-clock-rotate-left" style="color: rgb(113, 113, 224);"></i>
+                            <p>Memories</p>
+                        </div>
+                        <div class="iconsWithDetail">
+                            <i class="fa-solid fa-message" style="color: rgb(0, 98, 255);"></i>
+                            <p>Feeds</p>
+                        </div>
+                        <div class="iconsWithDetail">
+                            <i class="fa-solid fa-users-line" style="color: blue;"></i>
+                            <p>Groups</p>
+                        </div>
+                        <div class="iconsWithDetail">
+                            <i class="fa-solid fa-store" style="color: blueviolet;"></i>
+                            <p>Marketplace</p>
+                        </div>
+                        <div class="iconsWithDetail">
+                            <i class="fa-brands fa-square-youtube" style="color: rgb(92, 92, 224);"></i>
+                            <p>Video</p>
+                        </div>
+                        <div class="iconsWithDetail">
+                            <i class="fa-solid fa-chart-simple" style="color: blue;"></i>
+                            <p>Professional dashboard</p>
+                        </div>
+                        <div class="iconsWithDetail">
+                            <i class="fa-solid fa-flag" style="color: rgb(126, 15, 230);"></i>
+                            <p>Pages</p>
+                        </div>
+                        <div class="iconsWithDetail">
+                            <i class="fa-solid fa-volume-high" style="color: dodgerblue;"></i>
+                            <p>Add center</p>
+                        </div>
+                        <div class="iconsWithDetail">
+                            <i class="fa-solid fa-signal" style="color: blue;"></i>
+                            <p>Ads manager</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal full screen -->
+                <div class="modal fade " id="exampleModalToggle3" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <!-- Modal 4 -->
+                    <div class="modal4">
+                        <h2>Story Image</h2>
+                        <div class="child-1">
+                            <img id="uplImgae" src="./Assets/nature.jpg" alt="">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="uploadNowBtn">Upload now</button>
+                    </div>
+                    <div class="modal-dialog modal-dialog-centered modal-fullscreen	">
+                        <div class="modal-content">
+                            <div class="firstSect">
+                                <div class="modal-header" id="modalFBIconparent">
+                                    <div class="modal-title fs-5 d-flex justify-content-between modalset"
+                                        id="exampleModalToggleLabel">
+                                        <div class="headersIcon pt-3 pb-3 ">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                            <i class="fa-brands fa-facebook" id="modalFBIcon"></i>
+                                        </div>
+                                        <div>
+                                            <ul class="nav">
+                                                <li class="nav-item navbarBars " id="menuHidden">
+                                                    <a class="nav-link" aria-current="page" href="#"><i
+                                                            class="fa-solid fa-bars"></i></a>
+                                                </li>
+                                                <li class="nav-item navbarBars hiddenIcon">
+                                                    <a class="nav-link" href="#"><i
+                                                            class="fa-brands fa-facebook-messenger"></i></a>
+                                                </li>
+                                                <li class="nav-item navbarBars hiddenIcon">
+                                                    <a class="nav-link" href="#"><i class="fa-solid fa-bell"></i></a>
+                                                </li>
+                                                <li class="nav-item navbarBars" id="displayUserProfile"
+                                                    onclick="myHandle1()">
+                                                    <div class="profileClickBtn">
+                                                        <img src="./Assets/profile.jpg" alt="" class="modalImgIcon"
+                                                            id="profileImg">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="modal-body" id="modalBodyCss">
+                                    <div class="sittingWithUser d-flex  ">
+                                        <div class="d-flex flex-column p-2 " id="storyfirst">
+                                            <div class="second d-flex justify-content-between ">
+                                                <h3 class="fw-bold ">Your story</h3>
+                                                <div class="sittingIconModal">
+                                                    <i class="fa-solid fa-gear"></i>
+                                                </div>
+                                            </div>
+                                            <div class="userNameWithPhoto mt-4 ">
+                                                <img src="./Assets/profile.jpg" alt="" id="profileImg10">
+                                                <p id="userName10">Username</p>
+                                            </div>
+                                        </div>
+                                        <div class="uploadSource d-flex ">
+                                            <div class="card" style="width: 15rem; height: 350px;" id="bluePic">
+                                                <div class="container4 position-absolute "
+                                                    style="top: 20px; left:80px;">
+                                                    <div class="circle">
+                                                        <div class="wrapper">
+                                                            <span class="value"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <input type="file" id="storyupdata">
+                                                <label for="storyupdata" style="margin: auto 20px;">
+                                                    <div
+                                                        class="card-body d-flex flex-column align-items-center justify-content-center ">
+                                                        <div class="storyFirstIcon">
+                                                            <i class="fa-solid fa-image"></i>
+
+                                                        </div>
+                                                </label>
+                                                <p class="card-text">Create a Photo Story</p>
+                                                <button type="button" class="btn btn-success" id="checkOutUpload">Add
+                                                    Story</button>
+
+                                            </div>
+                                        </div>
+                                        <div class="card" style="width: 15rem; height: 350px;" id="pinkPic">
+                                            <div
+                                                class="card-body d-flex flex-column align-items-center justify-content-center">
+                                                <div class="storyFirstIcon">
+                                                    <p class="mb-0 "><i class="fa-solid fa-a"></i>a</p>
+                                                </div>
+                                                <p class="card-text">Create a Text Story</p>
+                                                <button type="button" class="btn btn-success" id="">Add Text</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Image/Video</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <input type="text" class="form-control" id="imgInput"
+                                placeholder="Enter/Paste Image URL here">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" id="uploadImage">Upload Image</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- section B  -->
+
+            <div class="col-lg-5 col-sm-10 overflow-hidden " id="sectionB">
+                <div class="spinner-border text-primary" role="status" id="spinnerSect2">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="hiddenContainer">
+                    <div data-bs-spy="scroll" id="slideScroll" data-bs-target="#navbar-example2"
+                        data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
+                        class="scrollspy-example bg-body-tertiary p-0 rounded-2" tabindex="0">
+                        <div class="slideFlex d-flex border-bottom-0 ">
+                            <div class="card slide1" style="width: 10rem; height: 250px;">
+                                <img src="" class="card-img-top" id="addStoryImgTag" alt="..." height="170px">
+                                <div class="card-body d-flex flex-column align-items-center ">
+                                    <button class="btn btn-primary" style="border-radius: 50%;" id="addStoryBtn"
+                                        data-bs-target="#exampleModalToggle3" data-bs-toggle="modal"><i
+                                            class="fa-solid fa-plus"></i></button>
+                                    <p class="card-title mt-3  ">Add Story</p>
+                                </div>
+                            </div>
+                            <div class="d-flex " id="parentStoryImage">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-1" id="postalCard">
+                        <div class="card-body justify-content-between " id="secttionBSearchBar">
+                            <div class="userProfileImagePar">
+                                <img src="" alt="" id="profileImg3">
+                            </div>
+                            <div class="searchBar">
+                                <p>What's on your mind, <span id="searchUserName"></span>?</p>
+                            </div>
+                        </div>
+                        <div class="linkIcons p-3">
+                            <div class="firsIcon">
+                                <i class="fa-solid fa-video" style="color: red;"></i>
+                                <p>Live video</p>
+                            </div>
+                            <div class="firsIcon">
+                                <i class="fa-solid fa-photo-film" style="color: green;"></i>
+                                <p>Photo/video</p>
+                            </div>
+                            <div class="firsIcon">
+                                <i class="fa-brands fa-youtube" style="color: rgb(223, 97, 122);"></i>
+                                <p>Reel</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Post area  -->
+                    <div class="postCard">
+                        <!-- <div class="card"  id="postCard">
+                            <div class="displayPost">
+                                <div class="post">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p>User name</p>
+                                </div>
+                                <div class="postIcon">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                            </div>
+                            <div class="postPic m-2">
+                                <img src="./Assets/nature.jpg" alt="" width="496px">
+                            </div>
+                             Like, comment and share 
+                            <div class="likeAndComments m-2">
+                                <div class="thumb">
+                                    <i class="fa-regular fa-thumbs-up"></i>
+                                    <p>Like</p>
+                                </div>
+                                <div class="thumb">
+                                    <i class="fa-regular fa-comment"></i>
+                                    <p>Comment</p>
+                                </div>
+                                <div class="thumb">
+                                    <i class="fa-solid fa-square-arrow-up-right"></i>
+                                    <p>Send</p>
+                                </div>
+                            </div>
+                        </div> -->
+
+                    </div>
+                    <!-- postCard2  -->
+                    <div class="card m-1" id="postCard2">
+                        <div class="card-body">
+                            <div class="post1">
+                                <h5 class="card-title">Create Post</h5>
+                                <i class="fa-solid fa-xmark" id="crossHandler"></i>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="post">
+                            <img src="./Assets/profile.jpg" alt=""
+                                style="width: 40px; height: 40px; border-radius: 50%;" id="userPichey">
+                            <p id="createPostUser" style="margin-left: 10px;">User name</p>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <input type="text" placeholder="What's on your mind?" id="postInput">
+                            <img src="" alt="" id="uploadImgSample">
+                            <div class="spinner-border text-secondary" role="status" id="spinner">
+                                <span class="visually-hidden"></span>
+                            </div>
+                        </div>
+                        <div class="inputAndPicUpload p-2">
+                            <input type="file" id="input-file">
+                            <label for="input-file" class="d-flex flex-column align-items-center " id="imageUploadBtn">
+                                <img src="./Assets/userSnipper-PhotoRoom.png-PhotoRoom.png" alt="">
+                                <p>Add Photos/Videos</p>
+                            </label>
+                        </div>
+                        <br>
+                        <div id="btnParent">
+                            <button type="button" class="btn postBtnChanging" id="postBtn">Post</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Section C -->
+            <div class="col-3 scrollBar p-3 hidden" id="sectionC" style="background-color: #fff;">
+                <div class="line1" style="display: flex; align-items: center;">
+                    <div class="userProfileImagePar">
+                        <img src="./Assets/profile.jpg" alt="" id="profileImg2">
+                    </div>
+                    <h5 id="userName2" style="padding-bottom: 0; margin-bottom: 0; margin-left: 20px;"></h5>
+                </div>
+                <div class="line2 mt-3" id="profileBorder">
+                    <i class="fa-solid fa-user"></i>
+                    <p id="profileId">Edit Profile</p>
+                    <i class="fa-thin fa-greater-than"></i>
+                </div>
+                <div class="line2">
+                    <i class="fa-solid fa-gear"></i>
+                    <p id="privacy">Setting & Privacy</p>
+                    <i class="fa-thin fa-greater-than"></i>
+                </div>
+                <div class="line2">
+                    <i class="fa-solid fa-circle-question"></i>
+                    <p id="support">Help & Support</p>
+                    <i class="fa-thin fa-greater-than"></i>
+                </div>
+                <div class="line2">
+                    <i class="fa-solid fa-moon"></i>
+                    <p id="display">Display & Accessibility</p>
+                    <i class="fa-thin fa-greater-than"></i>
+                </div>
+                <div class="line2">
+                    <i class="fa-solid fa-message"></i>
+                    <p id="logOut">Give feedback</p>
+                    <i class="fa-thin fa-greater-than"></i>
+                </div>
+                <div class="line2">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <p id="logOut" onclick="logOutHandler()">Logout</p>
+                    <i class="fa-thin fa-greater-than"></i>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+
+
+    <script src="app.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+
+</html>

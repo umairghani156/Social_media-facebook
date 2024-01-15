@@ -5,7 +5,7 @@
     box-sizing: border-box;
  }
  body{
-    background-image: url('./assets/wallpaper.jpg');
+    background-image: url('../assets/wallpaper.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -45,10 +45,11 @@
     width: 300px;
    margin: 35px auto;
    padding: 10px 15px;
+   transition: all 2s;
 }
 .inputParent h2{
     text-align: center;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 .logInHey label{
     margin-top: 10px;
@@ -62,16 +63,23 @@
     display: flex;
     justify-content: center;
     margin: 20px 15px;
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
-#logBtn:hover{
+#logInSubmitBtn:hover{
     background-color: blue;
     color: #fff;
 }
-#logBtn{
-    width: 250px;
+#logInSubmitBtn{
+    width: 240px;
     padding: 4px 10px;
     font-family: 'Poppins';
     border: none;
+    border-radius: 15px;
+}
+#signUpSubmitBtn{
+    width: 240px;
+    font-family: 'Poppins';
+    border: none;
+    padding: 4px 0 ;
     border-radius: 15px;
 }

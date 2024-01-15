@@ -7,12 +7,13 @@ body{
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(107,113,230,1) 31%, rgba(78,29,193,0.9698004201680672) 55%, rgba(106,111,229,1) 77%, rgba(108,117,232,1) 87%, rgba(107,112,230,1) 87%, rgba(107,113,230,1) 97%);
 }
 .myBar{
-    width: 420px;
+    width: 400px;
     height: 530px;
     padding: 20px 50px;
     background-color: #fff;
     margin-top: 40px;
     border-radius: 15px;
+    padding-top: 20px;
 }
 .buttonHey{
     display: flex;
@@ -93,7 +94,40 @@ body{
 #termsACon:hover{
     color: red;
     cursor: pointer;
+    text-decoration: underline;
+
 }
 #btn:hover{
     background: blue;
 }
+#uploadfile{
+   font-size: 12px;
+}
+ /* percentage */
+ main, .container4, .circle, .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .container4{
+    width: 70px;
+    height: 40px;
+ }
+ .circle{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    /* background-color: #E80F88; */
+    background: conic-gradient(#054c05 3.6deg, #ededed 0deg);
+ }
+ .wrapper{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+ }
+ .value{
+    font-size: 10px;
+    color: #042e04;
+    font-family: sans-serif;
+  }
